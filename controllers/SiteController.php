@@ -127,4 +127,10 @@ class SiteController extends Controller
         }
         return $this->render('q4', ['model'=>$model]);
     }
+
+    public function action5()
+    {
+        $model = new \app\models\Q5Cust;
+        return $this->render('q5', ['model'=>$model]);
+    }
 }

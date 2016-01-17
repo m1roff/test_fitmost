@@ -12,6 +12,7 @@ $this->title = 'My Yii Application';
         <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['site/2'])?>">Вопрос 2</a></p>
         <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['site/3'])?>">Вопрос 3</a></p>
         <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['site/4'])?>">Вопрос 4</a></p>
+        <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['site/5'])?>">Вопрос 5</a></p>
 
     </div>
 </div>
