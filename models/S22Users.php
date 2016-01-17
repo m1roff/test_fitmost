@@ -17,6 +17,11 @@ class S22Users extends baseS22Users
             ]);
     }
 
+    public function getTenTodayOrders()
+    {
+        return $this->getS22Orders()->where('DATE(date) = CURDATE()')->orderBy(['date'=>'desc'])->limit(10);
+    }
+
     /**
      * Получить кол-во сегодняшних заявок пользователя
      * @return int

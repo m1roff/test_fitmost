@@ -35,3 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
 </div>
+
+<div>
+    <h4>Список последних 10 сегодняшних заявок текущего пользователя</h4>
+    <pre><? print_r($model->tenTodayOrders) ?></pre>
+</div>
