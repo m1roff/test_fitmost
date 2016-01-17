@@ -109,4 +109,22 @@ class SiteController extends Controller
         $model = new \app\models\Q3();
         return $this->render('q3', ['model'=>$model]);
     }
+
+    public function action4()
+    {
+        $model = new \app\models\Q4();
+        $model->load(Yii::$app->request->post());
+        
+        if(empty($model->k))
+        {
+            // test 1
+            $model->k  = 1;
+            $model->b  = 3;
+            $model->x1 = 3;
+            $model->y1 = 10;
+            $model->x2 = 6;
+            $model->y2 = 5;
+        }
+        return $this->render('q4', ['model'=>$model]);
+    }
 }
