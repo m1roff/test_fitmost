@@ -138,4 +138,9 @@ class SiteController extends Controller
     {
         return $this->render('q6');
     }
+
+    public function action7()
+    {
+        return $this->render('q7');
+    }
 }
