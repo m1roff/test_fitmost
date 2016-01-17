@@ -22,11 +22,35 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            // ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            // 'id',
             'name',
             'age',
+            [
+                'format' => 'html',
+                'header' => 'Есть заявка',
+                'value' => function($data)
+                {
+                    return $data->ordersCount > 0 ? 'Да' : 'Нет' ;
+                }
+            ],
+            [
+                'format' => 'html',
+                'header' => '>5',
+                'value' => function($data)
+                {
+                    return $data->ordersCount > 5 ? 'Да' : 'Нет' ;
+                }
+            ],
+            [
+                'format' => 'html',
+                'header' => 'Сегодня',
+                'value' => function($data)
+                {
+                    return $data->ordersTodayCount > 0 ? 'Да' : 'Нет' ;
+                }
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

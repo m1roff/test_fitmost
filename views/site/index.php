@@ -17,7 +17,7 @@ $this->title = 'My Yii Application';
         <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['site/7'])?>">Вопрос 7</a></p>
         <h3>Решения задач</h3>
         <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['/q21'])?>">Решение 2.1</a></p>
-        <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['/q22'])?>">Решение 2.2</a></p>
+        <p><a class="btn btn-default" href="<?=\yii\helpers\Url::to(['/q22-users'])?>">Решение 2.2</a></p>
 
     </div>
 </div>
